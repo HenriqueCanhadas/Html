@@ -13,10 +13,30 @@
     table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    tbody>tr:nth-child(odd){
+        background-color:darkslateblue;
+        color: yellow;
+    }
+    tbody>tr:nth-child(even){
+        background-color:darkred;
+        color: green;
     }
     td, th{
         border: 1px solid black;
         padding: 10px;
+    }
+    thead>tr>th{
+        position: sticky;
+        top: -1px;
+        background-color: gray
     }
     thead, tfoot{
         background-color: gray;
@@ -31,10 +51,13 @@
 <h1>Uso de Tabelas Grandes</h1>    
 
 <table>
+
+    <caption>População das Unidades Federativas</caption>
+
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </tr>
     </thead>
     
@@ -52,17 +75,167 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Sâo Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
     </tbody>
     
     
     <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
-            <td><strong>84.352.783</strong></td>
+            <th scope="row">Total de Habitantes</th>
+            <td scope="col"><strong>84.352.783</strong></td>
         </tr>
 
     </tfoot>
 </table>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae ducimus nam nostrum, enim beatae nobis at modi molestias eligendi, fugiat aperiam atque quas, dolor voluptas. Reiciendis cupiditate voluptate sint?</p>
+
 
 </body>
 </html>
