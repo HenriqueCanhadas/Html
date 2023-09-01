@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header>h1{
+    text-align: center;
+    background-color: #3c00ff;
+    padding: 10px;
+    color: white;
+}
+
+section{
+    height: 43em;
+    border-left: 10px solid #3c00ff;
+}
+
+section>h2{
+   background-color: #3c00ff;
+   border-right: #3c00ff solid;
+}
+
+section.informaçoes{
+    float: right;
+    border-bottom: #3c00ff ;
+}
+
+section.aniversarios{
+    float: right;
+    border-right: 10px;
+}
+
+section.informaçoes>h2{
+    border-right: 20px solid #3c00ff ;
+    color: white;
+}
+
+section.aniversarios>h2{
+    border-right: 20px solid #3c00ff ;
+    color: white;
+}
+
