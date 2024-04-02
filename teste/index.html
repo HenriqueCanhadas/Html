@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatinha Ana</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🤓%3C/text%3E%3C/svg%3E">
+
+
+    <style>
+        body{
+            background-color: deeppink;
+        }
+        .painel{
+            margin: auto;
+            background-color: red;
+            width: 440px;
+            height: 570px;
+            text-align: center;
+            border-radius: 20px;
+            font-family: cursive;
+        }
+        #sim{
+            height: 40px;
+            width: 150px;
+            background-color: rgb(255, 122, 122);
+            border: 2px solid black;
+            border-radius: 10px;
+            color: black;
+            margin-left: -170px;
+        }
+        #nao{
+            position: absolute;
+            height: 40px;
+            width: 150px;
+            background-color: rgb(255, 122, 122);
+            border: 2px solid black;
+            border-radius: 10px;
+            color: black;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="painel">
+        <h1>Para minha Gatinha Nerdzinha</h1>
+        <img src="https://media3.giphy.com/media/KztT2c4u8mYYUiMKdJ/giphy.gif" alt="">
+        <h5>Quem eh mais maromba?</h5>
+        <a href="https://www.youtube.com/watch?v=huHUXGg0zBA&pp=ygUhaGFwcHkgaGFwcHkgaGFwcHkgY2F0IG1lbWUgMSBob3Vy" target="_blank"><button id="sim" onclick="parabens()">Gatinha Ana 💪 </button></a>
+        <button onmouseover="fuja()" id="nao">Henrique</button>
+    </div>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+            
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+        function parabens(){
+                alert("Acertou !!!")
+        }
+    </script>
+    
+</body>
+</html>
