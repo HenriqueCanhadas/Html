@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: rgba(242, 242, 242, 1);
+            }
+            .header, .footer {
+                background-color: rgba(15, 7, 51, 1);
+                color: rgba(98, 104, 214, 1);
+                padding: 10px;
+            }
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+                gap: 10px; /* Reduzido para manter o alinhamento */
+                flex-wrap: nowrap; /* Adicionado para impedir quebra de linha */
+            }
+            .content {
+                background-color: rgba(15, 7, 51, 1);
+                padding: 20px;
+                font-size: 18px;
+                color: white;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: rgba(98, 104, 214, 1);
+                padding: 10px;
+                border-radius: 25px;
+                color: white;
+            }
+            .details, .description {
+                box-sizing: border-box;
+                min-width: 250px;
+                padding: 10px;
+            }
+            .details {
+                flex: 1;
+                padding-right: 10px;
+            }
+            .description {
+                flex: 2;
+                word-wrap: break-word;
+            }
+            .red {
+                color: red;
+            }
+            .footer {
+                font-size: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .no-reply {
+                font-size: 14px;
+                background-color: rgba(255, 0, 0, 0.1);
+                color: red;
+                border: 2px solid red;
+                padding: 10px;
+                display: inline-block;
+            }
+            .button {
+                background-color: rgba(98, 104, 214, 1);
+                color: white;
+                border: none;
+                padding: 10px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            .imagem-responsiva {
+                height: 50px; /* Ajuste conforme necessário */
+                flex-shrink: 0; /* Adicionado para evitar redimensionamento da imagem */
+                margin-right: 50px; /* Adicionado para espaçar a imagem do texto */
+            }
+            .titulo {
+                margin: 0;
+                white-space: nowrap; /* Adicionado para impedir quebra de linha */
+            }
+        </style>
+    </head>
+<body>
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/TecnologiaServmar/Logo-Marca/main/logo.png" alt="Logo" class="imagem-responsiva">
+        <h1 class="titulo">Informação de Chamado</h1>
+    </div>
+    <div class="content">
+        <p>Olá, Daniel Foffano Rocha.</p>
+        <p>Informamos que a nossa equipe esta com seu chamado <span class="red">em Andamento</span>:</p>
+        <div class="container">
+            <div class="details">
+                <p><strong>N°:</strong> <span class="red">15</span></p>
+                <p><strong>Status:</strong> <span class="red">em Andamento</span></p>
+                <p><strong>Categoria:</strong> <span class="red">Solicitação</span></p>
+                <p><strong>Tipo:</strong> <span class="red"> Instalação/Aquisição de Software</span></p>
+                <p><strong>Responsável:</strong> <span> Henrique Pedrosa Canhadas</span></p>
+                <p><strong>Previsão de Conclusão:</strong> <span> 2024-05-27</span></p>
+            </div>
+            <div class="description">
+                <p><strong>Descrição do Chamado:</strong></p>
+                <p>estou sem acesso aos relatórios de receita do Power BI</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 1986-2024 SERVMAR. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(242, 242, 242, 1);
+        }
+        .header, .footer {
+            background-color: rgba(15, 7, 51, 1);
+            color: rgba(98, 104, 214, 1);
+            padding: 10px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+        }
+        .content {
+            background-color: rgba(15, 7, 51, 1);
+            padding: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(98, 104, 214, 1);
+            padding: 10px;
+            border-radius: 25px;
+            color: white;
+        }
+        .details, .description {
+            box-sizing: border-box;
+            min-width: 250px;
+            padding: 10px;
+        }
+        .details {
+            flex: 1;
+            padding-right: 10px;
+        }
+        .description {
+            flex: 2;
+            word-wrap: break-word;
+        }
+        .red {
+            color: red;
+        }
+        .footer {
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .no-reply {
+            font-size: 14px;
+            background-color: rgba(255, 0, 0, 0.1);
+            color: red;
+            border: 2px solid red;
+            padding: 10px;
+            display: inline-block;
+        }
+        .button {
+            background-color: rgba(98, 104, 214, 1);
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .imagem-responsiva {
+            width: 25%;
+            height: auto;
+        }
+        .titulo{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/TecnologiaServmar/Logo-Marca/main/logo.png" alt="Logo" class="imagem-responsiva">
+        <h1 class="titulo">Informação de Chamado</h1>
+    </div>
+    <div class="content">
+        <p>Olá, Daniel Foffano Rocha.</p>
+        <p>Informamos que a nossa equipe registrou um chamado em seu nome.</p>
+        <p class="red">Você está recebendo este email porque um chamado foi registrado em seu nome.</p>
+        <div class="container">
+            <div class="details">
+                <p><strong>N°:</strong> <span class="red">15</span></p>
+                <p><strong>Status:</strong> <span class="red">Em espera</span></p>
+                <p><strong>Categoria:</strong> <span class="red">Solicitação</span></p>
+                <p><strong>Tipo:</strong> <span class="red"> Instalação/Aquisição de Software</span></p>
+            </div>
+            <div class="description">
+                <p><strong>Descrição do Chamado:</strong></p>
+                <p>estou sem acesso aos relatórios de receita do Power BI</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://apps.powerapps.com/play/e/default-77c942ea-7e76-49d5-8ab1-1e23cb5c985a/a/faa2d2b5-987e-4282-ad18-3b2f3cf11efc?tenantId=77c942ea-7e76-49d5-8ab1-1e23cb5c985a&hint=a9d4c8f2-7fb8-4e80-a824-0cc143950cf9&sourcetime=1715967264214&hidenavbar=true/#" class="button">Cancelar Chamado</a>
+        <p class="no-reply"><strong>Não Responder a este Email</strong></p>
+        <p>&copy; 1986-2024 SERVMAR. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
